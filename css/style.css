@@ -1,0 +1,21 @@
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right top, #260d55, #241351, #22184c, #221c47, #221f41, #221e3b, #211e36, #201d30, #1d1929, #1a1622, #16121c, #120d16);
+}
+
+.card{
+   
+    display: flex;
+    justify-content: center;
+    margin: 25%;
+    flex-direction: column;
+}
+
+.footer{
+    display: flex;
+    font-size: 1rem;
+    color: white;
+    justify-content: center;
+}
+
