@@ -96,9 +96,6 @@ body{
     background-color: #141414
 }
 
-.list{
-
-}
 .item{
     position: relative;
     display: flex;  
