@@ -1,21 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.first-color { 
+	background: #dbd8e3; 
+}
+	
+.second-color { 
+	background: #5c5470; 
+}
+
+.third-color { 
+	background: #352f44; 
+}
+
+.fourth-color { 
+	background: #2a2438; 
+}
+
 body{
+    width: 100vw;
     height: 100vh;
-    width: 100%;
     background-image: linear-gradient(to right top, #260d55, #241351, #22184c, #221c47, #221f41, #221e3b, #211e36, #201d30, #1d1929, #1a1622, #16121c, #120d16);
+    font-family: 'Poppins', sans-serif;
 }
 
-.card{
-   
+.container{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin: 25%;
-    flex-direction: column;
+    align-items: center
 }
 
-.footer{
-    display: flex;
-    font-size: 1rem;
-    color: white;
+.to-do{
+    margin-top: 5rem;
+    padding: 3rem;
+    background-color: #dbd8e3;
+    width: 28rem;
+    border-radius: 1.5rem;
+    align-items: center;
     justify-content: center;
 }
 
+.title__todo{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 1.2rem;
+    
+}
+/* inspiration and (most of the) code by @juliocodes in instagram */
+.input {
+	position: relative;
+    display: flex;  
+    justify-content: center;
+    gap: 1rem;  
+
+}
+.input__field {
+	padding: 0.6rem;
+	border: none;
+	border-radius: 0.5rem;
+	font: inherit;
+	color: #000000;
+	background-color: transparent;
+	outline: 2px solid #000000;
+}
+.input__label {
+	position: absolute;
+	top: -0.18rem;
+    bottom: 1rem;
+	left: 2.5rem;
+    padding-top:0.15rem;
+	transform: translate(10px, 10px);
+	transform-origin: center;
+	transition: transform 0.25s;
+}
+.input__field:focus-visible ~ .input__label,
+.input__field:valid ~ .input__label {
+	transform: translate(0.3rem, -30px) scale(1.0);
+	color: #000000;
+}
+
+
+/* Final */
+
+.btn__input{
+    border:none;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    background-color: #000000;
+    color:white;
+    }
+
+.btn__input:hover{
+    background-color: #141414
+}
