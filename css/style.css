@@ -83,7 +83,7 @@ body{
 
 /* Final */
 
-.btn__input{
+.btn__add{
     border:none;
     border-radius: 100%;
     width: 2rem;
@@ -94,4 +94,29 @@ body{
 
 .btn__input:hover{
     background-color: #141414
+}
+
+.list{
+
+}
+.item{
+    position: relative;
+    display: flex;  
+    justify-content: space-between;
+    gap: 7.5rem; 
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.btn__list{
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    background-color: green;
+}
+
+.text__list{
+    
+    position: relative;
+    top: 0.7rem;
 }
