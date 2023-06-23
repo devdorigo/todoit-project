@@ -44,7 +44,7 @@ body{
     text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
-    padding-bottom: 1.2rem;
+    padding-bottom: 2rem;
     
 }
 /* inspiration and (most of the) code by @juliocodes in instagram */
@@ -68,7 +68,7 @@ body{
 	position: absolute;
 	top: -0.18rem;
     bottom: 1rem;
-	left: 2.5rem;
+	left: 2.7rem;
     padding-top:0.15rem;
 	transform: translate(10px, 10px);
 	transform-origin: center;
@@ -76,13 +76,18 @@ body{
 }
 .input__field:focus-visible ~ .input__label,
 .input__field:valid ~ .input__label {
-	transform: translate(0.3rem, -30px) scale(1.0);
+	transform: translate(0.7rem, -20px) scale(1.0);
 	color: #000000;
 }
 
 
 /* Final */
 
+
+.form__todo{
+    display: flex;
+    gap: 1rem;
+}
 .btn__add{
     border:none;
     border-radius: 100%;
@@ -116,4 +121,8 @@ body{
     
     position: relative;
     top: 0.7rem;
+}
+
+.btn__task::type{
+    display: none;
 }
